@@ -14,19 +14,6 @@
     })(window,document,'script','dataLayer','GTM-PM3GPTR');</script>
     <!-- End Google Tag Manager -->
     <title>AB Testing</title>
-    <style>
-      .dark {
-        background: #343a40;
-      }
-
-      .dark h1 {
-        color: white;
-      }
-
-      .dark p {
-        color: #eee;
-      }
-    </style>
   </head>
   <body>
     <noscript>
@@ -39,7 +26,7 @@
           <h1 class="jumbotron-heading">Album example</h1>
           <p class="lead">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
           <p>
-            <a href="#" class="btn btn-primary my-2" style="width: 300px" onclick="dataLayer.push({'event': 'transactionComplete'});ga('send', 'event', 'transactionComplete');">Buy it</a>
+            <a href="#" class="btn btn-primary my-2" style="width: 300px" onclick="ga('send', { hitType: 'event', eventCategory: 'transactionComplete', eventAction: 'click', eventLabel: 'Buy it' });">Buy it</a>
           </p>
         </div>
       </section>
@@ -189,9 +176,5 @@
         </div>
       </div>
     </main>
-    <script>
-      const blockEle = document.getElementById('block')
-      // blockEle.classList.add('dark')
-    </script>
   </body>
 </html>
